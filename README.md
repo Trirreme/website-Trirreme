@@ -75,3 +75,6 @@ mesma chave no `PT`. Sem a chave no `PT`, o trecho simplesmente não traduz.
 - `est. 2026` no hero e `© 2026` no rodapé — conferir o ano de fundação.
 - Base da empresa: texto atual diz **Ariquemes — RO**, exceto uma frase em `cmp3`
   (`js/main.js`) que ainda cita "Porto Velho" — revisar qual cidade é a correta.
+- Título da seção Projetos (`wrkTitle`): o inglês diz "Real systems, already sailing"
+  mas o português em `js/main.js` ainda traduz a versão antiga ("No ar, agora") —
+  ajustar a tradução quando o texto em inglês for revisado de novo.

@@ -112,14 +112,8 @@ input,textarea,button{font-family:inherit}
 .hero-meta{display:flex;gap:14px 22px;flex-wrap:wrap;padding-top:6px;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;color:var(--faint)}
 .hero-figure{position:relative;border-left:3px double var(--line-2);background:linear-gradient(168deg,var(--surface),var(--panel-2));overflow:hidden;min-height:520px}
 @media (max-width:900px){.hero-figure{border-left:0;border-top:3px double var(--line-2);min-height:320px;order:2}}
-.hero-figure-glow{position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 38%,color-mix(in srgb,var(--gold) 26%,transparent),transparent 62%)}
-.hero-ring-outer{position:absolute;left:50%;top:42%;width:min(78%,470px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:1px solid color-mix(in srgb,var(--line-2) 70%,transparent)}
-.hero-ring-inner{position:absolute;left:50%;top:42%;width:min(56%,340px);aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:color-mix(in srgb,var(--surface) 70%,transparent)}
 .hero-ship{position:absolute;left:12%;right:12%;top:45%;width:76%;transform:translateY(-50%);filter:drop-shadow(0 22px 34px rgba(31,29,26,.14)) saturate(.9);animation:float 8s ease-in-out infinite}
 @media (max-width:900px){.hero-ship{position:relative;top:auto;left:auto;right:auto;transform:none;width:min(60%,280px);margin:46px auto;animation:bob 8s ease-in-out infinite}}
-.hero-wave{position:absolute;left:8%;width:44%;bottom:19%;opacity:.9;animation:wave 6s ease-in-out infinite}
-.hero-wave-right{position:absolute;right:6%;width:30%;bottom:12%;opacity:.45;transform:scaleX(-1);animation:wave 7.5s ease-in-out infinite}
-.hero-figure-footer{position:absolute;bottom:20px;left:22px;right:22px;display:flex;justify-content:space-between;font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
 
 /* ---------- Marquee strip ---------- */
 .marquee{background:var(--panel);border-block:3px double var(--line-2);overflow:hidden}
@@ -237,9 +231,9 @@ input,textarea,button{font-family:inherit}
 .form-note{font-size:15px;line-height:1.5;color:var(--muted)}
 
 /* ---------- CTA final ---------- */
-.cta-final{padding-block:var(--sp);background:var(--panel);border-top:3px double var(--line-2)}
-.cta-final-inner{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--px)}
-.cta-wave{width:120px;margin-bottom:14px}
+.cta-final{padding-block:var(--sp);background:var(--panel);border-top:3px double var(--line-2);position:relative;overflow:hidden}
+.cta-bg-wave{position:absolute;right:-2%;bottom:-6%;width:220px;opacity:.14;pointer-events:none}
+.cta-final-inner{max-width:var(--maxw);margin-inline:auto;padding-inline:var(--px);position:relative}
 .cta-title{font-family:var(--font-display);font-size:clamp(38px,5.8vw,72px);line-height:1.02;letter-spacing:-.01em;max-width:24ch;margin-bottom:34px;text-wrap:balance}
 .cta-actions{display:flex;gap:14px;flex-wrap:wrap}
 .cta-btn{display:inline-flex;align-items:center;gap:9px;padding:16px 30px;border-radius:2px;font-size:16px;font-weight:600;transition:background .2s,transform .2s,border-color .2s}
