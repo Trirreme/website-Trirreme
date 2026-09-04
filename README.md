@@ -29,10 +29,12 @@ Projetos (3 exemplos) · depoimento · A empresa · A equipe · Contato (formul�
 
 ## Identidade
 
-- **Cores** (tokens em `:root`): papiro `#FBF7F1`, tinta `#2A2422`, vermelho-nau `#B7361F`,
-  laranja-vela `#EE7A22`, painéis `#F4EDE3` / `#FDF3E6`. Tema claro é o principal;
-  há um tema escuro que re-mapeia os mesmos papéis (ativado pelo sistema do visitante).
-- **Tipografia**: Instrument Serif (títulos), IBM Plex Sans (texto), IBM Plex Mono (rótulos).
+- **Cores** (tokens em `:root`): papel `#FAF8F3`, superfície `#FFFEFB`, painéis `#F0EDE3` /
+  `#E7E3D6`, tinta `#1F1D1A`, texto `#45423C`, tijolo `#B0543C`, ocre `#C98A56`.
+  Base branco-quente quase neutra — jornal impresso em papel novo, não em papiro velho.
+  Tema claro é o principal; há um tema escuro em carvão neutro que re-mapeia os mesmos
+  papéis (segue o sistema do visitante, com botão de troca manual no header).
+- **Tipografia**: Instrument Serif (títulos), Lora (texto), IBM Plex Mono (rótulos).
 - **Movimento**: reveal ao rolar, contadores, marquee, barra de progresso, parallax leve,
   nau flutuante. Tudo desliga com `prefers-reduced-motion`.
 

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#FBF7F1" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#161210" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#FAF8F3" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#1A1917" media="(prefers-color-scheme: dark)" />
 <title>Trirreme</title>
 <meta name="description" content="Trirreme — tecnologia e dados para empresas: análise de dados e BI, desenvolvimento de sistemas, sites e cardápios online, consultoria e gestão de projetos. Porto Velho / RO, atendimento remoto." />
 
@@ -14,28 +14,28 @@
 
 <style>
   /* ============================================================
-     TRIRREME — tema "jornal antigo", pastel
-     Papel envelhecido, tintas desbotadas de tijolo e ocre,
-     réguas finas e duplas, textura de papel sobre tudo.
+     TRIRREME — jornal moderno sobre papel branco
+     Base branco-quente quase neutra, tinta preta de imprensa,
+     acento tijolo, réguas finas e duplas, grão de papel discreto.
      ============================================================ */
   :root {
     color-scheme: light;
-    --bg:       #F3ECDB;
-    --surface:  #FAF4E4;
-    --panel:    #ECE2C9;
-    --panel-2:  #E6DABE;
-    --ink:      #3B3427;
-    --body:     #5B5241;
-    --muted:    #796E58;
-    --faint:    #9A8D72;
-    --line:     #D8CCAF;
-    --line-2:   #C6B693;
+    --bg:       #FAF8F3;
+    --surface:  #FFFEFB;
+    --panel:    #F0EDE3;
+    --panel-2:  #E7E3D6;
+    --ink:      #1F1D1A;
+    --body:     #45423C;
+    --muted:    #6B6760;
+    --faint:    #8C877C;
+    --line:     #E4E0D5;
+    --line-2:   #CFC9BA;
 
-    --red:      #A65742;
-    --red-deep: #8C4531;
-    --orange:   #BE904F;
-    --gold:     #C7A25C;
-    --grid-line:#E2D6B8;
+    --red:      #B0543C;
+    --red-deep: #8F4029;
+    --orange:   #C98A56;
+    --gold:     #D9C08A;
+    --grid-line:#EDE9DE;
 
     --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
     --font-body:    "Lora", Georgia, "Times New Roman", serif;
@@ -51,20 +51,20 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       color-scheme: dark;
-      --bg:#221D14; --surface:#2A2318; --panel:#2E2718; --panel-2:#352C1C;
-      --ink:#EEE3CC; --body:#C8BCA0; --muted:#A99C80; --faint:#897C61;
-      --line:#3E3524; --line-2:#50442E;
-      --red:#D98A6E; --red-deep:#E39C80; --orange:#D9B078; --gold:#D9B978;
-      --grid-line:#322A1B;
+      --bg:#1A1917; --surface:#232220; --panel:#282725; --panel-2:#302F2C;
+      --ink:#F0EEE6; --body:#C9C6BD; --muted:#A29E95; --faint:#7E7A72;
+      --line:#33322F; --line-2:#44423E;
+      --red:#DB9070; --red-deep:#E8A98C; --orange:#D6A473; --gold:#DCC79A;
+      --grid-line:#292826;
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --bg:#221D14; --surface:#2A2318; --panel:#2E2718; --panel-2:#352C1C;
-    --ink:#EEE3CC; --body:#C8BCA0; --muted:#A99C80; --faint:#897C61;
-    --line:#3E3524; --line-2:#50442E;
-    --red:#D98A6E; --red-deep:#E39C80; --orange:#D9B078; --gold:#D9B978;
-    --grid-line:#322A1B;
+    --bg:#1A1917; --surface:#232220; --panel:#282725; --panel-2:#302F2C;
+    --ink:#F0EEE6; --body:#C9C6BD; --muted:#A29E95; --faint:#7E7A72;
+    --line:#33322F; --line-2:#44423E;
+    --red:#DB9070; --red-deep:#E8A98C; --orange:#D6A473; --gold:#DCC79A;
+    --grid-line:#292826;
   }
 
   /* ============================================================ */
@@ -88,8 +88,8 @@
     content: "";
     position: fixed; inset: 0;
     pointer-events: none; z-index: 9990;
-    opacity: .5; mix-blend-mode: multiply;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.42 0 0 0 0 0.37 0 0 0 0 0.27 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: .34; mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.34 0 0 0 0 0.31 0 0 0 0 0.26 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) body::after { mix-blend-mode: screen; opacity: .4; }
@@ -159,9 +159,9 @@
   }
   @media (prefers-reduced-motion: no-preference) { .btn:hover { transform: translateY(-2px); } }
   .btn--ink { background: var(--ink); color: var(--surface); }
-  .btn--ink:hover { background: var(--red-deep); color: #FAF4E4; }
-  .btn--red { background: var(--red); color: #FAF4E4; }
-  .btn--red:hover { background: var(--red-deep); color: #FAF4E4; }
+  .btn--ink:hover { background: var(--red-deep); color: var(--surface); }
+  .btn--red { background: var(--red); color: var(--surface); }
+  .btn--red:hover { background: var(--red-deep); color: var(--surface); }
   .btn--outline { border-color: var(--line-2); color: var(--ink); background: transparent; }
   .btn--outline:hover { border-color: var(--ink); }
   .btn .dot { width: 7px; height: 7px; border-radius: 50%; background: #7B9E6B; box-shadow: 0 0 0 4px color-mix(in srgb,#7B9E6B 25%,transparent); }
@@ -267,9 +267,9 @@
   .hero-figure .grid {
     position: absolute; inset: 0;
     background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-    background-size: 56px 56px; opacity: .55;
+    background-size: 56px 56px; opacity: .85;
   }
-  .hero-figure .ship { position: absolute; left: 9%; right: 9%; top: 45%; transform: translateY(-50%); aspect-ratio: 700 / 485; filter: drop-shadow(0 22px 34px rgba(120,70,30,.2)) saturate(.9); }
+  .hero-figure .ship { position: absolute; left: 9%; right: 9%; top: 45%; transform: translateY(-50%); aspect-ratio: 700 / 485; filter: drop-shadow(0 22px 34px rgba(31,29,26,.14)) saturate(.9); }
   @media (prefers-reduced-motion: no-preference) { .hero-figure .ship { animation: float 8s ease-in-out infinite; } }
   @keyframes float { 0%,100% { transform: translateY(-50%) rotate(0); } 50% { transform: translateY(calc(-50% - 12px)) rotate(-1.1deg); } }
   .hero-figure .wave { position: absolute; left: -6%; right: -6%; height: 2px; }
@@ -359,11 +359,11 @@
   .cards3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
   .pcard {
     display: flex; flex-direction: column; gap: 14px;
-    background: var(--surface); border: 1px solid var(--line-2); border-radius: 2px; padding: 15px 15px 20px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 2px; padding: 15px 15px 20px;
     transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .2s;
   }
   @media (prefers-reduced-motion: no-preference) {
-    .pcard:hover { transform: translateY(-5px); box-shadow: 0 18px 40px -24px rgba(120,60,40,.4); border-color: var(--red); }
+    .pcard:hover { transform: translateY(-5px); box-shadow: 0 20px 44px -28px rgba(31,29,26,.30); border-color: var(--red); }
   }
   .pcard { color: inherit; }
   .pcard:hover { color: inherit; }
@@ -372,7 +372,7 @@
     background: linear-gradient(150deg, var(--panel), var(--panel-2));
     overflow: hidden; position: relative;
   }
-  .pcard .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: sepia(.12) saturate(.92); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
+  .pcard .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; filter: sepia(.06) saturate(.96); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
   @media (prefers-reduced-motion: no-preference) { .pcard:hover .thumb img { transform: scale(1.03); } }
   .pcard .krow { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
   .pcard .k { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); }
@@ -395,7 +395,7 @@
   @keyframes voices { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .quote-card {
     width: 380px; flex: none;
-    background: var(--surface); border: 1px solid var(--line-2); border-radius: 2px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 2px;
     padding: 24px 24px 20px; display: flex; flex-direction: column; gap: 14px;
     white-space: normal;
   }
@@ -428,13 +428,13 @@
   .field > span, .field > label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--faint); }
   .field input, .field textarea {
     font-family: var(--font-body); font-size: 16px; color: var(--ink);
-    background: var(--surface); border: 1px solid var(--line-2); border-radius: 2px; padding: 12px 13px;
+    background: var(--surface); border: 1px solid var(--line); border-radius: 2px; padding: 12px 13px;
     transition: border-color .2s;
   }
   .field input:focus, .field textarea:focus { outline: none; border-color: var(--red); }
   .field textarea { min-height: 112px; resize: vertical; }
   .chips { display: flex; gap: 9px; flex-wrap: wrap; }
-  .chips label { padding: 10px 16px; border: 1px solid var(--line-2); border-radius: 2px; background: var(--surface); font-size: 15px; cursor: pointer; transition: border-color .2s, color .2s; }
+  .chips label { padding: 10px 16px; border: 1px solid var(--line); border-radius: 2px; background: var(--surface); font-size: 15px; cursor: pointer; transition: border-color .2s, color .2s; }
   .chips label:hover { border-color: var(--red); color: var(--red); }
   .chips input { position: absolute; opacity: 0; width: 0; height: 0; }
   .chips label:has(input:checked) { border-color: var(--red); color: var(--red); box-shadow: inset 0 0 0 1px var(--red); }
